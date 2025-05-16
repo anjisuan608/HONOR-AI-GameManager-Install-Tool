@@ -12,7 +12,13 @@ if %errorlevel% neq 0 (
     goto x
 )
 
-mkdir "%temp%\OpenVanilla"
+@REM 创建临时文件夹
+if not exist "%temp%\OpenVanilla" (
+    mkdir "%temp%\OpenVanilla"
+) else (
+    goto c
+)
+
 :c
 @REM 选择要执行的操作
 echo =========================
