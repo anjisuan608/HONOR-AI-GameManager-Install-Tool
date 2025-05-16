@@ -8,7 +8,7 @@ ___若访问缓慢可以尝试前往以下站点:___
 
 ## 声明
 
-1. **本项目仅供学习研究通过命令提示符调用PowerShell实现静默安装与卸载的原理，请勿用于商业用途，项目[许可证](./LICENSE)**
+1. **本项目仅供学习研究通过命令提示符调用[PowerShell](https://learn.microsoft.com/zh-tw/powershell/scripting/install/installing-powershell-on-windows)实现静默安装与卸载的原理，请勿用于商业用途，项目[许可证](./LICENSE)**
 2. **本项目存在一定风险，请勿使用于生产环境中！造成事故或经济损失，由使用者自行承担！**
 
 ## 简介
@@ -22,4 +22,4 @@ ___若访问缓慢可以尝试前往以下站点:___
 3. 服务状态检查
 
 ## 注意
-- *请确保设备中的PowerShell能够正常工作!否则可能导致程序运行出现错误!*
+- *请确保设备中的[PowerShell](https://learn.microsoft.com/zh-tw/powershell/scripting/install/installing-powershell-on-windows)能够正常工作!否则可能导致程序运行出现错误!*
