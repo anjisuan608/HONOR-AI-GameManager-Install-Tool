@@ -1,6 +1,17 @@
+@REM Copyright (c) 2025 anjisuan608
 @echo off
 title HONOR AI GameManager Install Tool
 color 03
+
+@REM 检查是否以管理员身份运行
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    color 04
+    echo 请以管理员身份运行此工具！
+    pause
+    goto x
+)
+
 mkdir "%temp%\OpenVanilla"
 :c
 @REM 选择要执行的操作
