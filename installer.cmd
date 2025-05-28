@@ -69,6 +69,7 @@ if exist "%temp%\OpenVanilla\Software\GameManager_Setup_1.0.0.20(SP2).zip" (
 ) else (
     echo 文件不存在，请检查下载的文件是否正确。
     timeout /t 3
+    goto t
     echo.
     goto c
 )
