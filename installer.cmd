@@ -45,7 +45,7 @@ if exist "%temp%\OpenVanilla\1_0_0_20_SP2.zip" (
     echo goto UnZipPackage
 ) else (
     echo 开始下载
-    powershell -Command "Invoke-WebRequest -Uri 'https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTWuEMBT8KyWnFmSJSfzaU6OupQe7C27psTxNtKF-LE-tdEv_eyPY5R0eM8wMw_yQedR4_r5osieMOEQNS79B38LatPoFuhU-2ZdDD43GO3dH7TF6X5xYP7RD8_CeGewWQL27mstmPMH0YY2cBlBy4Bx8JYB5pScUVKXvQliLOgSrLs31WVlpcXx8o5QKEdHA0hVqmMzQn83agDpkNE0P04xrH85kkIY8iQ4yyTwRRQmncSjcg5RpLCTzAxnKTCScez4NwjSiPuORy9OUcTdNYpu_wKQxB_zMWmjIvp_b1iEaccB8vOEOKqkU6nH8Z2zbbaLiaFO-oDXq9TbjhLP-_QNxsjnbWAEAAA%3D%3D.zip' -OutFile '%temp%\OpenVanilla\1_0_0_20_SP2.zip'"
+    powershell -Command "Invoke-WebRequest -Uri 'https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1Qy26DMBD8lcqnVkKRsc0rpxoIVQ80kUjVY7VgQ63yiBYoaqr-e52IRntYzWhmNTs_ZB41Hr9PmmwJIw5Rw9Kv0LewNq1-ge4Cn-zKoYdG4527oXYYvS8OrB_aoXl4zwx2C6DenM1pNR5g-rBGTgMoOXAOvhLAvNITCqrSdyGsRR2CVZfm_KystNg_vlFKhYhoYOkKNUxm6I_mkoA6ZDRND9OMlzycySANeRLtZJJ5IooSTuNQuDsp01hI5gcylJlIOPd8GoRpRH3GI5enKeNumsT2_gKTxhzwM2uhIdt-bluHaMQB8_GGO6ikUqjH8Z_5gtao11tvE876-sLaW7Env39rFHKXWAEAAA%3D%3D.zip' -OutFile '%temp%\OpenVanilla\1_0_0_20_SP2.zip'"
     echo 下载结束
 )
 
