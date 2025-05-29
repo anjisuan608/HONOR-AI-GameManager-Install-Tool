@@ -24,7 +24,7 @@ if not exist "%temp%\OpenVanilla" (
 echo =========================
 echo 荣耀AI游戏管家安装工具
 echo =========================
-echo 键入 i 执行静默安装
+echo 键入 i 执行静默安装(Version 1.0.0.23)
 echo 键入 s 执行服务检查
 echo 键入 u 执行静默卸载
 echo 键入 t 清理缓存目录
@@ -41,19 +41,19 @@ goto c
 
 :i
 @REM 静默安装
-if exist "%temp%\OpenVanilla\1_0_0_20_SP2.zip" (
+if exist "%temp%\OpenVanilla\InstallPackage.zip" (
     echo goto UnZipPackage
 ) else (
     echo 开始下载
-    powershell -Command "Invoke-WebRequest -Uri 'https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1Qy26DMBD8lcqnVkKRsc0rpxoIVQ80kUjVY7VgQ63yiBYoaqr-e52IRntYzWhmNTs_ZB41Hr9PmmwJIw5Rw9Kv0LewNq1-ge4Cn-zKoYdG4527oXYYvS8OrB_aoXl4zwx2C6DenM1pNR5g-rBGTgMoOXAOvhLAvNITCqrSdyGsRR2CVZfm_KystNg_vlFKhYhoYOkKNUxm6I_mkoA6ZDRND9OMlzycySANeRLtZJJ5IooSTuNQuDsp01hI5gcylJlIOPd8GoRpRH3GI5enKeNumsT2_gKTxhzwM2uhIdt-bluHaMQB8_GGO6ikUqjH8Z_5gtao11tvE876-sLaW7Env39rFHKXWAEAAA%3D%3D.zip' -OutFile '%temp%\OpenVanilla\1_0_0_20_SP2.zip'"
+    powershell -Command "Invoke-WebRequest -Uri 'https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTUvDQBD9K7InhVJ2Z5LNpifTmoiHWqEVjzJptnExH2WSWKz4392UWOYwvMd78_F-xNBZ3n0frVgIEDNRtKdmgtrDg6vsM9UjfPRtTQ2Vlm_UXPoCvG3aqi3v3jPH9YnYzs_uOLleqP_wrjiMMFBhYHKNQQQRWTpIKNCGYPL8EHh17s5PhZduN_dvUsogNKg8vWdLvWubnRvXy5noXNlQP_B4TIYrAw8YyFiF2mTRMoogwThDjalewkrHGkySAoIBmSoDS4yVSVYZYpgqkH7-iXrLa-LPrKJSLJqhqmbCMre87q64pn1SFGy77p_5osoVr9fQeh7s5YUptO1G_P4B4Zr1f1UBAAA%3D.zip' -OutFile '%temp%\OpenVanilla\InstallPackage.zip'"
     echo 下载结束
 )
 
 :UnZipPackage
 @REM 解压外部包
-if exist "%temp%\OpenVanilla\1_0_0_20_SP2.zip" (
+if exist "%temp%\OpenVanilla\InstallPackage.zip" (
     echo 文件存在，开始解压
-    powershell -Command "Expand-Archive -Path '%temp%\OpenVanilla\1_0_0_20_SP2.zip' -DestinationPath '%temp%\OpenVanilla\' -Force"
+    powershell -Command "Expand-Archive -Path '%temp%\OpenVanilla\InstallPackage.zip' -DestinationPath '%temp%\OpenVanilla\' -Force"
     echo 解压完成
 ) else (
     echo 文件不存在，请检查网络连接。
@@ -62,9 +62,9 @@ if exist "%temp%\OpenVanilla\1_0_0_20_SP2.zip" (
     goto c
 )
 @REM 检查解压后的安装程序压缩包是否存在
-if exist "%temp%\OpenVanilla\Software\GameManager_Setup_1.0.0.20(SP2).zip" (
+if exist "%temp%\OpenVanilla\Software\GameManager_Setup_1.0.0.23.zip" (
     echo 文件存在，开始解压
-    powershell -Command "Expand-Archive -Path '%temp%\OpenVanilla\Software\GameManager_Setup_1.0.0.20(SP2).zip' -DestinationPath '%temp%\OpenVanilla\' -Force"
+    powershell -Command "Expand-Archive -Path '%temp%\OpenVanilla\Software\GameManager_Setup_1.0.0.23.zip' -DestinationPath '%temp%\OpenVanilla\' -Force"
     echo 解压完成
 ) else (
     echo 文件不存在，请检查下载的文件是否正确。
@@ -75,7 +75,7 @@ if exist "%temp%\OpenVanilla\Software\GameManager_Setup_1.0.0.20(SP2).zip" (
 )
 @REM 静默安装
 echo 开始安装
-powershell -Command "Start-Process -FilePath '%temp%\OpenVanilla\GameManager_Setup_1.0.0.20(SP2).exe' -ArgumentList '/S' -Wait"
+powershell -Command "Start-Process -FilePath '%temp%\OpenVanilla\GameManager_Setup_1.0.0.23.exe' -ArgumentList '/S' -Wait"
 echo 安装结束
 echo.
 goto c
@@ -134,6 +134,7 @@ goto c
 
 :t
 @REM 清理缓存目录
+cls
 echo 正在清理缓存目录
 del /q "%temp%\OpenVanilla\*"
 for /d %%i in ("%temp%\OpenVanilla\*") do rd /s /q "%%i"
