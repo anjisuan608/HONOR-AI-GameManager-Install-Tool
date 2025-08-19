@@ -1,6 +1,6 @@
 # 荣耀AI游戏管家安装工具
 ## 存储库
-___若访问缓慢可以尝试前往GitCode、Gitee仓库站点:___
+___若访问缓慢可以尝试前往GitCode、Gitee仓库站点:___  
 **注:下载资源释放中以`.cmd`或`.bat`结尾的文件使用!**
 <!--
 - GitHub:&ensp;[项目仓库](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
