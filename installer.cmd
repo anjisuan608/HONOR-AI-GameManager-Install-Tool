@@ -26,7 +26,7 @@ if not exist "%AppData%\OpenVanilla\HnGMCfg" (
 
 :ve
 @REM 定义版本号
-set "version=1.0.0.28"
+set "version=1.0.0.30"
 goto c
 
 :c
@@ -60,9 +60,9 @@ goto c
 
 :i
 @REM 静默安装
-set "version=1.0.0.28"
-set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTU-EMBD9K6YnTcim0NKWPQllMR5wTXaNRzMLBRv52AwgcY3_3WJwM4fJm7w3b-Z9k2kwePw6G7IlAfFI2c_dCoWDlW3ME7QLfHAthw5qgzf-hroK1G3XN31995ZZbGdAs7nY86p6hvHdqZisWEFpJGVouApBncJAgfCrKBSiAN-xT_byWDrqYX__SinlivPFukADo-27o13sqUcGW3cwTrgco4RMYx1IlfAok5LrJE6oZqlWUaCFzHjo83SnUxowR82EYGzHfCmoyJjUPHX7ZxgN5oAfWQM12XZT03jEIPaYD1fcQhGXJZph-J98QmPLl2toI07m74U1tMOe_PwCOwyzElUBAAA%3D.zip"
-:mi
+@REM set "version=" :: 已弃用,版本配置见顶部
+set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTU-DQBD9K2ZPmpBmFxYWenIXivFQa9Iaj2aEATfy0QxgY43_3aXBZg6T9_LevJn5YdOAdPg-Ilszn3ms7E_dAiMHK9vgE7QzfHBtCx3USDdixV0F_Lbrm76-e8sttScgXJ3tcXE9w_jhXDwJRIgYQqVQQhEBhkIIX5QCRSxU5dTv9vxYOul-d__KOZeJTGJHF4Qw2r472Dmee2ywdQfjRPMySutNHEmtAt-oXEqTpcZomYW5H0eZVqEKXLIRUuk0y3iaSGNEGgc61cJs8szNP8GItAX6zBuo2bqbmsZjSNTTdrjiFgpdloTD8M98QWPLl-vTRprwcsLytP2O_f4BEfIjTVUBAAA%3D.zip"
+:installShell
 echo =========================
 echo 当前目标版本 %version%
 echo =========================
@@ -439,28 +439,35 @@ echo 0 - 1.0.0.20(SP2)
 echo 1 - 1.0.0.23
 echo 2 - 1.0.0.26
 echo 3 - 1.0.0.28
+echo 4 - 1.0.0.30
 echo =========================
+@REM 操作说明: 添加对应下载选项后, 同时添加对应echo版本说明
 choice /C 0123456789ABCDEF /CS /M "请选择(0~F):"
 if %errorlevel% == 1 (
     set "version=1.0.0.20(SP2)"
     set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1Qy26DMBD8lcqnVkKRsc0rpxoIVQ80kUjVY7VgQ63yiBYoaqr-e52IRntYzWhmNTs_ZB41Hr9PmmwJIw5Rw9Kv0LewNq1-ge4Cn-zKoYdG4527oXYYvS8OrB_aoXl4zwx2C6DenM1pNR5g-rBGTgMoOXAOvhLAvNITCqrSdyGsRR2CVZfm_KystNg_vlFKhYhoYOkKNUxm6I_mkoA6ZDRND9OMlzycySANeRLtZJJ5IooSTuNQuDsp01hI5gcylJlIOPd8GoRpRH3GI5enKeNumsT2_gKTxhzwM2uhIdt-bluHaMQB8_GGO6ikUqjH8Z_5gtao11tvE876-sLaW7Env39rFHKXWAEAAA%3D%3D.zip"
-    goto mi
+    goto installShell
 )
 if %errorlevel% == 2 (
     set "version=1.0.0.23"
     set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTUvDQBD9K7InhVJ2Z5LNpifTmoiHWqEVjzJptnExH2WSWKz4392UWOYwvMd78_F-xNBZ3n0frVgIEDNRtKdmgtrDg6vsM9UjfPRtTQ2Vlm_UXPoCvG3aqi3v3jPH9YnYzs_uOLleqP_wrjiMMFBhYHKNQQQRWTpIKNCGYPL8EHh17s5PhZduN_dvUsogNKg8vWdLvWubnRvXy5noXNlQP_B4TIYrAw8YyFiF2mTRMoogwThDjalewkrHGkySAoIBmSoDS4yVSVYZYpgqkH7-iXrLa-LPrKJSLJqhqmbCMre87q64pn1SFGy77p_5osoVr9fQeh7s5YUptO1G_P4B4Zr1f1UBAAA%3D.zip"
-    goto mi
+    goto installShell
 )
 if %errorlevel% == 3 (
     set "version=1.0.0.26"
     set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTU-DQBD9K2ZPmpBmKAsLPVnYxXjAmrTGo5mWATfy0QxgY43_3cXUZg4vb_LefLxvMQ3Eu68jiZVYCk-U_am70MjRyjb0hO1MHxwU2GFNfOMvwNUyuu36pq_v3nLL7QmZFmd7vLiecXx3LkV7IAlYoQMpCZUPVQxRFSooD1Xs1Ht7fiyddLu5fwUAGcUQuvaBCUfbdzs7rwdPDLbucJx4PgZkoHS4BJX4xkjQaZiFUQ4mMrGUiTZ6DaAgTBMtU5OZdRDnmQoynWgfcpMbN_-EI3GB_JE3WItVNzWNJ4i552K48hYP67JkGob_zic2tny5hjbyRH8vXELbbsTPL4qz089VAQAA.zip"
-    goto mi
+    goto installShell
 )
 if %errorlevel% == 4 (
     set "version=1.0.0.28"
     set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTU-EMBD9K6YnTcim0NKWPQllMR5wTXaNRzMLBRv52AwgcY3_3WJwM4fJm7w3b-Z9k2kwePw6G7IlAfFI2c_dCoWDlW3ME7QLfHAthw5qgzf-hroK1G3XN31995ZZbGdAs7nY86p6hvHdqZisWEFpJGVouApBncJAgfCrKBSiAN-xT_byWDrqYX__SinlivPFukADo-27o13sqUcGW3cwTrgco4RMYx1IlfAok5LrJE6oZqlWUaCFzHjo83SnUxowR82EYGzHfCmoyJjUPHX7ZxgN5oAfWQM12XZT03jEIPaYD1fcQhGXJZph-J98QmPLl2toI07m74U1tMOe_PwCOwyzElUBAAA%3D.zip"
+    goto installShell
 )
-if %errorlevel% == 5 goto c
+if %errorlevel% == 5 (
+    set "version=1.0.0.30"
+    set "downloadUrl=https://iknow-dl.service.hihonor.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD1QTU-DQBD9K2ZPmpBmFxYWenIXivFQa9Iaj2aEATfy0QxgY43_3aXBZg6T9_LevJn5YdOAdPg-Ilszn3ms7E_dAiMHK9vgE7QzfHBtCx3USDdixV0F_Lbrm76-e8sttScgXJ3tcXE9w_jhXDwJRIgYQqVQQhEBhkIIX5QCRSxU5dTv9vxYOul-d__KOZeJTGJHF4Qw2r472Dmee2ywdQfjRPMySutNHEmtAt-oXEqTpcZomYW5H0eZVqEKXLIRUuk0y3iaSGNEGgc61cJs8szNP8GItAX6zBuo2bqbmsZjSNTTdrjiFgpdloTD8M98QWPLl-vTRprwcsLytP2O_f4BEfIjTVUBAAA%3D.zip"
+    goto installShell
+)
 if %errorlevel% == 6 goto c
 if %errorlevel% == 7 goto c
 if %errorlevel% == 8 goto c
