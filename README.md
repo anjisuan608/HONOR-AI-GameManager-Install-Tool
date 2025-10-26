@@ -2,18 +2,22 @@
 ## 存储库
 ___若访问缓慢可以尝试前往GitCode、Gitee仓库站点:___  
 **注:下载资源释放中以`.cmd`或`.bat`结尾的文件使用!**
+
 <!--
-- GitHub:&ensp;[项目仓库](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
-- GitCode:&ensp;[项目仓库](https://gitcode.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://gitcode.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
-- Gitee:&ensp;[项目仓库](https://gitee.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://gitee.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
-- AtomGit:&ensp;[项目仓库](https://atomgit.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://atomgit.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/tags?tab=release)
+- GitHub:&ensp;[仓库地址](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
+- GitCode:&ensp;[仓库地址](https://gitcode.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://gitcode.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
+- Gitee:&ensp;[仓库地址](https://gitee.com/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://gitee.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
+- GitLink:&ensp;[仓库地址](https://gitlink.org.cn/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://gitlink.org.cn/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
+- OpenAtom:&ensp;[仓库地址](https://openatom.tech/anjisuan608/HONOR-AI-GameManager-Install-Tool)&emsp;[文件下载](https://openatom.tech/anjisuan608/HONOR-AI-GameManager-Install-Tool/tags?tab=release)
 -->
+
 代码托管站 | 项目仓库地址 | 文件下载
 :-----------: | :-----------: | :-----------:
 GitHub | [仓库地址](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://github.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
 GitCode | [仓库地址](https://gitcode.com/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://gitcode.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
 Gitee | [仓库地址](https://gitee.com/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://gitee.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
-AtomGit | [仓库地址](https://atomgit.com/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://atomgit.com/anjisuan608/HONOR-AI-GameManager-Install-Tool/tags?tab=release)
+GitLink | [仓库地址](https://gitlink.org.cn/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://gitlink.org.cn/anjisuan608/HONOR-AI-GameManager-Install-Tool/releases)
+OpenAtom | [仓库地址](https://openatom.tech/anjisuan608/HONOR-AI-GameManager-Install-Tool) | [文件下载](https://openatom.tech/anjisuan608/HONOR-AI-GameManager-Install-Tool/tags?tab=release)
 
 ## 声明
 
